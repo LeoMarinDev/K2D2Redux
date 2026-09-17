@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.5.8f1
-CRC: 3092328825
+CRC: 4216774352
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 48bd3dedd5748dbeae0a947ecd36b520
+    Hash: cc6bff6bb9aab10d3ba1a2734f04e648
   TypeTreeHash:
     serializedVersion: 2
     Hash: 504c8d9fdba5b4f9c5f6b0dc9033942b
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 64cad7918655e2c3732fb6864cec01e9
+    Hash: 8a3bbe3b762cefd9330e309604c6064a
 HashAppended: 0
 ClassTypes:
 - Class: 21
@@ -32,14 +32,36 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: K2D2
+  ClassName: K2UI.Console/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.Group/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.InlineEnum/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.K2Avatar/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.K2Compass/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.K2ProgressBar/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.K2Slider/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.K2Toggle/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.StatusLine/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.Tabs.TabPage/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.Tabs.TabbedPage/UxmlSerializedData
+- AssemblyName: K2D2
+  ClassName: K2UI.ToggleButton/UxmlSerializedData
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Color
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.EntityId
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
   ClassName: UnityEngine.TextCore.FaceInfo
-- AssemblyName: UnityEngine.TextCoreFontEngineModule
-  ClassName: UnityEngine.TextCore.Glyph
-- AssemblyName: UnityEngine.TextCoreFontEngineModule
-  ClassName: UnityEngine.TextCore.GlyphMetrics
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
   ClassName: UnityEngine.TextCore.GlyphRect
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
@@ -48,8 +70,6 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
   ClassName: UnityEngine.TextCore.LowLevel.GlyphValueRecord
-- AssemblyName: UnityEngine.TextCoreTextEngineModule
-  ClassName: UnityEngine.TextCore.Text.Character
 - AssemblyName: UnityEngine.TextCoreTextEngineModule
   ClassName: UnityEngine.TextCore.Text.FontAssetCreationEditorSettings
 - AssemblyName: UnityEngine.TextCoreTextEngineModule
@@ -70,6 +90,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.UIElements.Label/UxmlSerializedData
 - AssemblyName: UnityEngine.UIElementsModule
   ClassName: UnityEngine.UIElements.RepeatButton/UxmlSerializedData
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.ScrollView/UxmlSerializedData
 - AssemblyName: UnityEngine.UIElementsModule
   ClassName: UnityEngine.UIElements.Specificity
 - AssemblyName: UnityEngine.UIElementsModule
@@ -97,18 +119,25 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UIElementsModule
   ClassName: UnityEngine.UIElements.VisualElementAsset
 - AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.VisualTreeAsset/AssetEntry
+- AssemblyName: UnityEngine.UIElementsModule
   ClassName: UnityEngine.UIElements.VisualTreeAsset/UsingEntry
+- AssemblyName: uitkforksp2.controls.Runtime
+  ClassName: UitkForKsp2.Controls.AppShell/UxmlSerializedData
+- AssemblyName: uitkforksp2.controls.Runtime
+  ClassName: UitkForKsp2.Controls.LateBoundUxmlSerializedData
+- AssemblyName: uitkforksp2.controls.Runtime
+  ClassName: UitkForKsp2.Controls.OabButton/UxmlSerializedData
 Assets:
 - Assets/Runtime/K2UI/Images/Cross.png
 - Assets/UI/K2D2_UI/K2D2.uss
 - Assets/UI/K2D2_UI/node.uxml
 - Assets/UI/K2D2_UI/attitude.uxml
 - Assets/UI/K2D2_UI/Dock.uxml
-- Assets/UI/K2D2_UI/Landing.uxml
 - Assets/UI/K2D2_UI/K2D2_Window.uxml
+- Assets/UI/K2D2_UI/Landing.uxml
 - Assets/UI/K2D2_UI/Lift.uxml
 - Assets/Runtime/K2UI/Images/gear.png
 - Assets/UI/K2D2_UI/about.uxml
-- Assets/Fonts/Caravan.asset
 - Assets/UI/K2D2_UI/StatusGroup.uxml
 Dependencies: []

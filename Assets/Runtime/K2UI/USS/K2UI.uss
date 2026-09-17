@@ -198,7 +198,14 @@
 
 .k2-status-line {
     font-size: 16px;
-    -unity-font-definition: url('project://database/Packages/uitkforksp2.controls/Assets/Theme/Fonts/NotoSansMonoCJK/NotoSansMonoCJKtc-Regular%20SDF.asset?fileID=11400000&guid=7e59a668a0d7f70429ea9a2737af9ff9&type=2#NotoSansMonoCJKtc-Regular SDF');
+    /* The theme's monospace face. This previously named
+       Theme/Fonts/NotoSansMonoCJK/NotoSansMonoCJKtc-Regular SDF, whose only difference here is
+       that it is a Traditional-Chinese face - and because a TextCore FontAsset in Dynamic atlas
+       mode must keep its source font file, naming it dragged that font's ~16 MB .otf into
+       k2d2_ui.bundle as a build dependency. JetBrainsMono is the theme's other monospace face,
+       already in the bundle for K2D2.uss, so the alignment contract is unchanged and the bundle
+       does not grow. CJK still resolves at runtime through the fallback chain. */
+    -unity-font-definition: url('project://database/Packages/uitkforksp2.controls/Assets/Theme/Fonts/JetBrainsMono/JetBrainsMono-Regular%20SDF.asset?fileID=11400000&guid=f5454c9c675002c44a5a7234bd40c390&type=2#JetBrainsMono-Regular SDF');
     white-space: normal;
 }
 
@@ -414,7 +421,10 @@ Label {
     padding-top: 2px;
     padding-right: 4px;
     padding-bottom: 2px;
-    background-color: rgb(0, 0, 0);
+    /* The legend masks the group's top border, so its background must match the panel it sits on,
+       not the old black app shell. The game theme declares the panel #1e2129 = rgb(30, 33, 41)
+       (references/UitkForKsp2-Unity/Assets/Theme/KerbalUI.uss:42). */
+    background-color: rgb(30, 33, 41);
     padding-left: 6px;
     color: rgb(153, 160, 255);
 }
